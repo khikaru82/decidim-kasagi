@@ -70,4 +70,7 @@ Rails.application.configure do
 
   # No precompilation on demand on first request
   config.assets.check_precompiled_asset = false
+
+  # ホワイトリストIPを全てのホストにする。 齊藤追記20220407
+  config.web_console.whitelisted_ips = '0.0.0.0/0'
 end
